@@ -3,6 +3,7 @@ package cn.rocker.recursion;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -30,14 +31,14 @@ public class RecursionTest {
     // 通过递归计算列表总和 结束------------
 
 
-    // 编写一个递归函数来计算列表包含的元素数 开始------------
+    // 编写一个递归函数来计算列表包含的元素数 START------------
     @Test
     public void testLength(){
 
-    }
-
-    public int getLength(List<Integer> list){
+        //TODO 待实现
 
     }
+
+    // 编写一个递归函数来计算列表包含的元素数 END------------
 
 }
