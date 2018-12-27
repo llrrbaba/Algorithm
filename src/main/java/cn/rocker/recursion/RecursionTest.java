@@ -41,4 +41,20 @@ public class RecursionTest {
 
     // 编写一个递归函数来计算列表包含的元素数 END------------
 
+
+    // 找出列表中最大的数字 START------------
+    @Test
+    public void testMax(){
+        int max = getMax(Arrays.asList(1, 0, 3, 742, 5, 6, 4356, 8, 853, 10, 31, 12, 23, 45, 78, 902));
+        System.out.println(max);
+    }
+
+    public int getMax(List<Integer> list){
+        if(list.size() == 2){
+            return list.get(0)>list.get(1)?list.get(0):list.get(1);
+        }
+
+        int max = getMax(list.subList(1, list.size()));
+        return list.get(0)>max?list.get(0):max;
+    }
 }
