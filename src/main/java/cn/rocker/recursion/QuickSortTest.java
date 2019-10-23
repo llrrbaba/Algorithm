@@ -33,8 +33,8 @@ public class QuickSortTest {
         int pivot = list.get(0);//递归条件
 
         List<Integer> subList = list.subList(1, list.size());
-        List<Integer> smallerSubList = new ArrayList<>();//有所有小于等于基准值的元素组成的子集合
-        List<Integer> biggerSubList = new ArrayList<>();//有所有大于基准值的元素组成的子集合
+        List<Integer> smallerSubList = new ArrayList<>();//由所有小于等于基准值的元素组成的子集合
+        List<Integer> biggerSubList = new ArrayList<>();//由所有大于基准值的元素组成的子集合
         for (Integer ele : subList) {
             if(ele <= pivot){
                 smallerSubList.add(ele);
